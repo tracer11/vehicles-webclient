@@ -1,0 +1,13 @@
+<h1>New Vehicle</h1> 
+
+<%= form_tag "/vehicles", method: :post do %>
+  <div>
+    <%= label_tag :vin %>
+    <%= text_field_tag :vin %>
+  </div>
+  <div>
+    <%= label_tag :manufacture %>
+    <%= text_field_tag :manufacture %>
+  </div>
+  <%= submit_tag "create" %>
+<% end %>
